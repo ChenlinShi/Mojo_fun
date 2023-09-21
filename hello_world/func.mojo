@@ -21,7 +21,7 @@ fn do_math():
 fn add (x:Int, y:Int)-> Int: # value in function is immutable by default
     return x+y
 
-fn add_inout (inout x:Int, inout y:Int)-> Int: 
+fn add_inout (inout x:Int, inout y:Int)-> Int: #mutate 
     x+=1
     y+=1
     return x+y
