@@ -22,7 +22,7 @@ def find_targer_sum_dict(list,target)-> PythonObject: # using dictionary # right
     seen=Python.dict()
     let length:Int= list.__len__().__index__()
     for i in range (length):
-        var num_of_list:Int = list[i]
+        var num_of_list = list[i]
         var complement_of_tar = target - num_of_list
         if complement_of_tar in seen:
             return [seen[complement_of_tar], i]
